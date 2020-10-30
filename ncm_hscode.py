@@ -1,6 +1,6 @@
 def getNCM(local_url):
     import sys, subprocess
-    #checa se a biblioteca já está instalada
+    #checa se a biblioteca já está instalada.
     if 'pandas' not in sys.modules:
         subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pandas'])
     #cria um dicionário de NCMs com 4 números e descrição (para conversão em massa de termos em
