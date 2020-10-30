@@ -9,6 +9,7 @@ def getCountryInfo(pais):
     print(file[file['NO_PAIS'].astype(str).apply(lambda x:pais in x)][['CO_PAIS','CO_PAIS_ISON3','CO_PAIS_ISOA3','NO_PAIS_ING','NO_PAIS']].reset_index(drop=True))
 
 def searchDist(municipio):
+    #busca de municípios
     import sys, subprocess
     #checa se a biblioteca já está instalada
     if 'pandas' not in sys.modules:
